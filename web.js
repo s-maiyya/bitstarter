@@ -1,11 +1,10 @@
-var npm = require('npm');
 var express = require('express');
 var fs = require('fs');
-var text = fs.readFileSync('index.html','utf8')
+var text = fs.readFileSync('index.html','utf8');
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send("WTF");
+  response.send('WTF');
 });
 
 var port = process.env.PORT || 5000;
